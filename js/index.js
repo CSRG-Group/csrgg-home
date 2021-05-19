@@ -122,11 +122,16 @@ search.addWidget(
       templates: {
         empty: 'No results for <q>{{ query }}</q>',
         item: `
-        <h2>
-          {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
-        </h2>
-        <p>{{ content }}</p>
-      `,
+        <div class="search-result">
+        <p>
+            <a href="https://csrg-group.github.io/dcs-notes.github.io/{{url}}" class="text-lg font-fira-code font-semibold underline">{{ collection }}: {{ title }}</a>
+        </p>
+        <p>{{ excerpt_text }}</p>
+        </div>
+        `,
+      },
+      transformItems(items) {
+          return items.slice(0, Math.min(3, items.length))
       }
     })
 );

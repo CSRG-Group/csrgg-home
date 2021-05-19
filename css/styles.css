@@ -18,3 +18,7 @@ html {
 .ais-search-box--override {
     max-width: none;
 }
+
+.search-result {
+    padding-bottom: 10px;
+}
