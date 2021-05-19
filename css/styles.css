@@ -14,3 +14,7 @@ html {
 .font-fira-code {
     font-family: "Fira Code", monospace;
 }
+
+.ais-search-box--override {
+    max-width: none;
+}

@@ -23,6 +23,14 @@
             href="https://unpkg.com/tailwindcss@next/dist/utilities.min.css"
         />
 
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css"
+        />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -99,27 +107,10 @@
                         >
                             Guide Search
                         </h2> -->
-                        <div class="mt-6">
+                        <div class="mt-6" id="search-box">
                             <label for="query" class="sr-only"
                                 >Search for a guide</label
                             >
-                            <input
-                                type="text"
-                                name="query"
-                                id="query"
-                                autocomplete="tel"
-                                class="
-                                    block
-                                    w-full
-                                    shadow-sm
-                                    py-3
-                                    px-4
-                                    placeholder-gray-500
-                                    rounded-md
-                                    text-black
-                                "
-                                placeholder="Search for a guide by module or name"
-                            />
                         </div>
                     </div>
                     <div
@@ -133,58 +124,11 @@
                         "
                         id="results"
                     >
-                        <div>
-                            <a
-                                href="#"
-                                class="
-                                    block
-                                    font-fira-code
-                                    underline
-                                    text-center
-                                "
-                            >
-                                <p class="text-xl font-semibold">
-                                    CS118: Programming for Computer Scientists
-                                </p>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a
-                                href="#"
-                                class="
-                                    block
-                                    font-fira-code
-                                    underline
-                                    text-center
-                                "
-                            >
-                                <p class="text-xl font-semibold">
-                                    CS118: Programming for Computer Scientists
-                                </p>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a
-                                href="#"
-                                class="
-                                    block
-                                    font-fira-code
-                                    underline
-                                    text-center
-                                "
-                            >
-                                <p class="text-xl font-semibold">
-                                    CS118: Programming for Computer Scientists
-                                </p>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
         <script async src="js/index.js"></script>
     </body>
 </html>
