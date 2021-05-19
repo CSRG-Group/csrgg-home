@@ -1,0 +1,16 @@
+html {
+    background: rgb(22, 94, 147);
+    background: linear-gradient(
+        90deg,
+        rgba(22, 94, 147, 1) 0%,
+        rgba(22, 141, 100, 1) 100%
+    );
+}
+
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.font-fira-code {
+    font-family: "Fira Code", monospace;
+}
